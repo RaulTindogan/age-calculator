@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Age Calculator App</title>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <div class="inputs" id="inputs">
+        <div>
+          <p class="date-label">DAY</p>
+          <input type="number" class="user-inputs" id="day-input" min="1" max="31" placeholder="DD">
+          <p class="error-container"></p>
+        </div>
+        <div>
+          <p class="date-label">MONTH</p>
+          <input type="number" class="user-inputs" id="month-input" min="1" max="12" placeholder="MM">
+          <p class="error-container"></p>
+        </div>
+        <div>
+          <p class="date-label">YEAR</p>
+          <input type="number" class="user-inputs" id="year-input" placeholder="YYYY">
+          <p class="error-container"></p>
+        </div>
+      </div>
+      <div class="submit-btn-container">
+        <hr />
+        <button class="submit-btn" id="submit-btn">
+          <img src="assets/images/icon-arrow.svg" alt="">
+        </button>
+      </div>
+    </div>
+    <div class="age-container">
+      <div class="years">
+        <p class="computed-age-container"><span class="age-span" id="year-span">--</span>years</p>
+      </div>
+      <div class="months">
+        <p class="computed-age-container"><span class="age-span" id="month-span">--</span>months</p>
+      </div>
+      <div class="days">
+        <p class="computed-age-container"><span class="age-span" id="day-span">--</span>days</p>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
