@@ -101,9 +101,9 @@ function dateValidation (year, month, day) {
         } else {
 
             for(let i = 0; i<3; i++) {
-                inputLabels[0].classList.remove('date-label-error')
-                inputField[0].classList.remove('user-inputs-error')
-                inputErrors[0].innerHTML ="";
+                inputLabels[i].classList.remove('date-label-error')
+                inputField[i].classList.remove('user-inputs-error')
+                inputErrors[i].innerHTML ="";
             }
             let milliseconds = currentDate - inputDate
         

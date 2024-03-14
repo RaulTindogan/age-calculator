@@ -66,6 +66,7 @@ body {
 .inputs {
     width: 100%;
     display: flex;
+    justify-content: space-evenly;
     gap: 10px;
 }
 
@@ -76,6 +77,10 @@ input[type=number]::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+.input-container {
+    width: 100%;
 }
 
 .user-inputs {
